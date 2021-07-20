@@ -1,0 +1,12 @@
+.footer {
+    margin-top: 250px;
+    padding: 50px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 23px;
+    color: $black;
+
+    @media screen and (max-width: 800px) {
+        margin-top: 50px;
+    }
+}

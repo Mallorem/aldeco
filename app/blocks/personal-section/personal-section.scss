@@ -1,0 +1,106 @@
+.personal-section {
+    position: relative;
+
+    &__container {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        @media screen and (max-width: 800px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &__info {
+        flex: 1 1 384px;
+        margin-right: 145px;
+        text-align: right;
+        max-width: 100%;
+
+        @media screen and (max-width: 800px) {
+            flex: 1 1 auto;
+            margin-bottom: 50px;
+            text-align: left;
+            margin-right: 0;
+            padding: 0 18px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 100px;
+
+        @media screen and (max-width: 1280px) {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__text {
+        max-width: 100%;
+
+        @media screen and (max-width: 600px) {
+            padding-right: 54px;
+        }
+    }
+
+    &__img-container {
+        position: relative;
+        flex: 0 1 577px;
+
+        @media screen and (max-width: 800px) {
+            flex: 1 0 100%;
+            width: 100%;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 67px;
+            left: -257px;
+            width: 224px;
+            height: 224px;
+            border: 2px;
+            border-style: dashed;
+            border-color: rgba($color: $gray, $alpha: 0.3);
+            border-radius: 50%;
+            transform: rotate(45deg);
+            border-right-color: transparent;
+            border-top-color: transparent;
+
+            @media screen and (max-width: 800px) {
+                top: calc(-100% + 32px);
+                left: calc(100% - 72px);
+                width: 107px;
+                height: 107px;
+            }
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -147px;
+            width: 10px;
+            height: 357px;
+            background: $yellow;
+
+            @media screen and (max-width: 800px) {
+                top: -100%;
+                left: calc(100% - 18px);
+                width: 5px;
+                height: 171px;
+            }
+        }
+    }
+
+    &__img {
+        width: 100%;
+        height: 752px;
+        object-fit: cover;
+
+        @media screen and (max-width: 800px) {
+            height: auto;
+            max-height: 384px;
+        }
+    }
+}

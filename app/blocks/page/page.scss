@@ -1,0 +1,40 @@
+.page {
+    font-family: "TT Hoves", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 19px;
+    max-width: 100%;
+    overflow-x: hidden;
+    min-width: 340px;
+
+    &__main {
+        overflow-x: hidden;
+    }
+
+    &__container {
+        margin: 0 auto;
+        max-width: 1152px;
+        width: 100%;
+
+        @media screen and (max-width: 1280px) {
+            max-width: 785px;
+        }
+
+        @media screen and (max-width: 1024px) {
+            max-width: 700px;
+        }
+
+        @media screen and (max-width: 800px) {
+            max-width: 100%;
+        }
+
+        &_wrap {
+            @media screen and (max-width: 800px) {
+                padding: 0 18px;
+            }
+        }
+    }
+
+    &_lock {
+        overflow: hidden;
+    }
+}

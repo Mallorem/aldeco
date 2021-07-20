@@ -1,0 +1,28 @@
+.header {
+    width: 100%;
+    display: flex;
+    position: relative;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 300px;
+        position: relative;
+        height: 139px;
+
+        @media screen and (max-width: 1280px) {
+            padding-right: 200px;
+        }
+
+        @media screen and (max-width: 800px) {
+            padding-right: 18px;
+            height: 70px;
+        }
+    }
+
+    &__decoration {
+        top: 139px;
+        left: 0;
+    }
+}

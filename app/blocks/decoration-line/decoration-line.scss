@@ -1,0 +1,18 @@
+.decoration-line {
+    height: 1px;
+    background-color: rgba($color: $black, $alpha: 0.1);
+    width: calc((100% - 1152px) / 2);
+    position: absolute;
+
+    @media screen and (max-width: 1280px) {
+        width: calc((100% - 785px) / 2);
+    }
+
+    @media screen and (max-width: 1024px) {
+        width: calc((100% - 700px) / 2);
+    }
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}

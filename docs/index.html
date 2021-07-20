@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/swiper@5.4.5/js/swiper.min.js"></script>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="page">
+  <header class="header">
+    <div class="decoration-line header__decoration"></div>
+    <div class="header__container page__container">
+      <a href="#" class="header__logo logo">
+        <img src="images/logo.png" alt="logo" class="logo__img">
+      </a>
+      <div class="header__menu menu">
+        <div class="menu__icon">
+          <p>Menu</p>
+          <span></span>
+        </div>
+        <div class="menu__body">
+          <nav class="menu__nav">
+            <ul class="menu__nav-list">
+              <li class="menu__nav-item">
+                <a href="#" class="menu__link"><span data-content="Start the magic">Start the magic</span></a>
+              </li>
+              <li class="menu__nav-item">
+                <a href="#" class="menu__link">About</a>
+              </li>
+              <li class="menu__nav-item">
+                <a href="#" class="menu__link">Subscribe</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="menu__contacts">
+            <div class="menu__contacts-body">
+              <a href="tel:5088349860" class="menu__phone">508 - 834 - 9860</a>
+              <ul class="menu__socials">
+                <li class="menu__socials-item">
+                  <a href="https://www.instagram.com/" target="_blank" class="menu__socials-link">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M7.99999 1.44369C10.1384 1.44369 10.3881 1.45455 11.2347 1.48711C13.4057 1.58481 14.4152 2.61601 14.5129 4.76526C14.5563 5.61194 14.5563 5.8616 14.5563 8C14.5563 10.1384 14.5454 10.3881 14.5129 11.2347C14.4152 13.384 13.4057 14.4152 11.2347 14.5129C10.3881 14.5563 10.1384 14.5563 7.99999 14.5563C5.86159 14.5563 5.61194 14.5455 4.76526 14.5129C2.5943 14.4152 1.5848 13.384 1.4871 11.2347C1.44368 10.3881 1.44369 10.1384 1.44369 8C1.44369 5.8616 1.45454 5.61194 1.4871 4.76526C1.5848 2.61601 2.5943 1.58481 4.76526 1.48711C5.60108 1.44369 5.86159 1.44369 7.99999 1.44369ZM7.99999 0C5.82903 0 5.55767 0.0108558 4.70014 0.0434202C1.79105 0.173678 0.17367 1.79105 0.043412 4.70014C-7.28681e-06 5.55767 0 5.82904 0 8C0 10.171 0.0108475 10.4423 0.043412 11.2999C0.17367 14.209 1.79105 15.8263 4.70014 15.9566C5.55767 16 5.82903 16 7.99999 16C10.171 16 10.4423 15.9891 11.2999 15.9566C14.1981 15.8263 15.8263 14.209 15.9566 11.2999C16 10.4423 16 10.171 16 8C16 5.82904 15.9891 5.55767 15.9566 4.70014C15.8263 1.8019 14.209 0.173678 11.2999 0.0434202C10.4423 0.0108558 10.171 0 7.99999 0ZM7.99999 3.88602C5.73134 3.88602 3.88602 5.72049 3.88602 8C3.88602 10.2795 5.72048 12.114 7.99999 12.114C10.2686 12.114 12.114 10.2795 12.114 8C12.1031 5.73134 10.2686 3.88602 7.99999 3.88602ZM7.99999 10.6703C6.52374 10.6703 5.32972 9.47625 5.32972 8C5.32972 6.52375 6.52374 5.32972 7.99999 5.32972C9.47625 5.32972 10.6703 6.52375 10.6703 8C10.6594 9.47625 9.46539 10.6703 7.99999 10.6703ZM12.2659 2.76798C11.7341 2.76798 11.2999 3.20217 11.2999 3.7232C11.2999 4.25509 11.7341 4.67843 12.2659 4.67843C12.7978 4.67843 13.2212 4.24423 13.2212 3.7232C13.2212 3.20217 12.7978 2.76798 12.2659 2.76798Z"
+                        fill="inherit" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="menu__socials-item">
+                  <a href="https://twitter.com/" target="_blank" class="menu__socials-link">
+                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M15.7005 0.206582C14.9877 0.609422 14.3886 0.919306 13.5726 1.01227C12.9632 0.299552 12.1575 0 11.1453 0C9.01743 0 7.39574 2.02453 7.90187 4.04906C5.16462 3.94577 2.73725 2.63396 1.11556 0.609429C0.309879 2.02454 0.609427 4.04906 2.12783 4.96836C1.5184 4.96836 1.11556 4.76178 0.609426 4.56552C0.609426 6.08392 1.62169 7.49903 3.24338 7.80891C2.73725 7.9122 2.33441 8.0155 1.72499 7.9122C2.12783 9.22402 3.34668 10.2363 4.76178 10.2363C3.54293 11.4551 1.72498 11.9613 0 11.7547C1.41511 12.6636 3.14009 13.1698 5.06133 13.1698C11.1349 13.1698 14.5746 8.00516 14.3783 3.34667C15.091 2.84054 15.5972 2.33441 16 1.62169C15.3906 1.92124 14.7811 2.12782 14.0788 2.12782C14.9877 1.72498 15.4939 1.01226 15.7005 0.206582Z"
+                        fill="inherit" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="menu__socials-item">
+                  <a href="https://www.facebook.com/" target="_blank" class="menu__socials-link">
+                    <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.81352 0C7.98909 0 7.16466 0 6.34023 0C5.70228 0.0883315 5.14285 0.186475 4.59323 0.549616C3.494 1.28571 2.84624 2.29662 2.7579 3.57252C2.7579 4.21047 2.7579 4.7699 2.7579 5.40785C2.7579 5.59433 2.7579 5.59433 2.57142 5.59433C1.747 5.59433 1.01091 5.59433 0.18648 5.59433C2.39849e-06 5.59433 0 5.68266 0 5.78081C0 6.5169 0 7.34133 0 8.07742C0 8.2639 0.0883339 8.2639 0.18648 8.2639C1.01091 8.2639 1.747 8.2639 2.57142 8.2639C2.7579 8.2639 2.7579 8.26391 2.7579 8.45038C2.7579 10.9237 2.7579 13.4068 2.7579 15.88C2.7579 16.1549 2.75791 16.1549 2.94438 16.1549C3.85714 16.1549 4.69138 16.1549 5.60414 16.1549C5.79061 16.1549 5.79062 16.0665 5.79062 15.9684C5.79062 14.6827 5.79062 13.4951 5.79062 12.2094C5.79062 11.012 5.79062 9.7361 5.79062 8.53871C5.79062 8.2639 5.79062 8.2639 6.06542 8.2639C6.97818 8.2639 7.90076 8.2639 8.81352 8.2639C9 8.2639 9 8.17557 9 8.07742C9 7.253 9 6.5169 9 5.78081C9 5.59433 9 5.59433 8.81352 5.59433C7.90076 5.59433 6.88986 5.59433 5.96729 5.59433C5.78081 5.59433 5.78081 5.50599 5.78081 5.40785C5.78081 5.04471 5.78081 4.58343 5.78081 4.21047C5.78081 3.93566 5.78081 3.66085 5.78081 3.47437C5.86914 3.11123 6.14394 2.83642 6.60523 2.83642C7.34133 2.83642 8.07743 2.83642 8.80371 2.83642C8.89204 2.83642 8.99019 2.83642 8.99019 2.64994C8.99019 1.82552 8.99019 1.00109 8.99019 0.176663C9 2.92498e-07 8.91167 0 8.81352 0Z"
+                        fill="inherit" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main page__main">
+    <section class="slider-section">
+      <div class="decoration-line slider-section__decoration"></div>
+      <div class="page__container slider-section__container">
+        <div class="slider swiper-container">
+          <ul class="slider__list swiper-wrapper">
+            <li class="slider__item slider__item_active swiper-slide">
+              <img src="./images/slider-photo.jpg" alt="decorated living room" class="slider__img">
+            </li>
+            <li class="slider__item swiper-slide">
+              <img src="./images/slider-photo.jpg" alt="decorated living room" class="slider__img">
+            </li>
+            <li class="slider__item swiper-slide">
+              <img src="./images/slider-photo.jpg" alt="decorated living room" class="slider__img">
+            </li>
+            <li class="slider__item swiper-slide">
+              <img src="./images/slider-photo.jpg" alt="decorated living room" class="slider__img">
+            </li>
+          </ul>
+          <div class="slider__nav">
+            <button class="slider__nav-btn slider__prev-btn">
+              <svg width="27" height="22" viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M27 11L1 11M1 11L11.4615 21M1 11L11.4615 0.999997" stroke="white" />
+              </svg>
+            </button>
+            <button class="slider__nav-btn slider__next-btn">
+              <svg width="27" height="22" viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M-8.74228e-07 11L26 11M26 11L15.5385 21M26 11L15.5385 0.999997" stroke="white" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="slider-section__frame">
+          <h3 class="slider-section__frame-title">AI designer</h3>
+          <p class="slider-section__frame-text">because you need the right atmosphere in your home</p>
+          <div class="slider-section__frame-btn-wrap">
+            <button class="slider-section__frame-btn">Start the magic</button>
+          </div>
+        </div>
+      </div>
+      <div class="decoration-block slider-section__decoration-block">
+        <div class="decoration-block__horizontal-line"></div>
+        <div class="decoration-block__vertical-line"></div>
+        <div class="decoration-block__circle-wrap">
+          <div class="decoration-block__circle"></div>
+        </div>
+      </div>
+    </section>
+    <section class="promise-section">
+      <div class="page__container page__container_wrap promise-section__container">
+        <div class="promise-section__img-container">
+          <img src="./images/promise-section-photo.jpg" alt="sofa" class="promise-section__img">
+        </div>
+        <div class="promise-section__text-block">
+          <h2 class="title promise-section__title">The promise</h2>
+          <p class="text promise-section__text">Lucy, your personal AI designer, has been taught by very talented and
+            experienced professionals to make and keep three promises: have your interests as the ONLY priority, work
+            TIRELESSLY for you, and not being biased. Well, maybe one more, to make this experience FUN.</p>
+        </div>
+      </div>
+    </section>
+    <section class="personal-section">
+      <div class="page__container personal-section__container">
+        <div class="personal-section__info">
+          <h2 class="title personal-section__title">Personal</h2>
+          <p class="text personal-section__text">Design is about getting the right atmosphere in your spaces, so you
+            can
+            get
+            the right energy from them. Whatever "job" you want done, your personal AI designer will do this job just
+            for
+            you, not as an average "popular" design.</p>
+        </div>
+        <div class="personal-section__img-container">
+          <img src="./images/personal-section-photo.jpg" alt="girl with tablet" class="personal-section__img">
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>Copyright © AI Deco, Inc. 2021</p>
+  </footer>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
